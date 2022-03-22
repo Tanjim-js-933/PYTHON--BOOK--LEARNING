@@ -1,0 +1,20 @@
+from numpy import number
+
+
+terminate = False
+while not terminate:
+    number1 = input("Please enter a number: ")
+    number1 = int(number1)
+    number2 = input("Please enter a number: ")
+    number2 = int(number2)
+    
+    while True:
+        operation = input("Please enter add/sub or quit to exit: ")
+        if operation == "quit":
+            terminate = True
+            break
+        if operation not in ["add", "sub"]:
+            print("Unknown operation!")
+            continue
+        
+        
